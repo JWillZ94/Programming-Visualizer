@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Visionary</title>
+    </head>
+    <body>
+        <h1>create page</h1>
+    </body>
+</html>
+
 <?php include('../../config/config.php') ?>
 
 <!DOCTYPE html>
