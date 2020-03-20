@@ -15,10 +15,12 @@
             </div>
         </header>
         <div id="content">
-            <form>
-                <input type=text />
+            <form action="./createTable.php" method="post">
+                <label for="projectName">Name your project: </label>
+                <input type=text name="projectName" required />
+
+                <input type="submit" value="Create" name="submitName" />
             </form>
-            <?php print $CONTENT ?>
         </div>
 
     </body>
