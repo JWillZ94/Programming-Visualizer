@@ -21,6 +21,16 @@
             $BACK_HOME = 'go to Home';
             $CONTENT = 'create proj boyy';
             break;
+
+        case '/Visionary/src/project/projectTemplate.php':
+
+            // $table_name = $conn->query('SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE table_name = "JavaScript"')->fetch();
+
+            $PAGE_TITLE = 'title of project: ' . $_POST['projectName'];
+            $BACK_HOME = 'go to Home';
+            $CONTENT = 'mad data, gonna break it up';
+            break;
+
         default:
             $CURRENT_PAGE = 'Home';
             $PAGE_TITLE = 'Visionary';
@@ -30,7 +40,7 @@
                 $arr = array();
 
                 foreach ($conn->query('SHOW TABLES')->fetchAll(PDO::FETCH_COLUMN) as $val) {
-                    array_push($arr, '<button>' . $val . '</button>');
+                    array_push($arr, '<input type="submit" value='. $val .' name="projectName" formaction="/Visionary/src/project/projectTemplate.php" />');
                 }
 
                 return implode(' ', $arr);

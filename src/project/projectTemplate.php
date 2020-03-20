@@ -8,17 +8,14 @@
     </head>
     <body>
         <header style="display: flex;">
-            <h4></h4>
+            <h4><a href="../home/home.php"><?php print $BACK_HOME ?></a></h4>
             <h1 id="title"><?php print $PAGE_TITLE ?></h1>
             <div>
                 <input id="search-bar" />
             </div>
         </header>
         <div id="content">
-            <form action='../project/projectTemplate.php' method='post'>
-                <?php echo $CONTENT ?>
-            </form>
-            <a href="../create/createProject.php"><button id="create-new">Create New</button></a>
+            <?php echo $CONTENT ?>
         </div>
 
     </body>
